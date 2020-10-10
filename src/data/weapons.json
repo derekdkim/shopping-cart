@@ -1,0 +1,39 @@
+{
+  "items":  [
+    {
+      "name": "Sword of a Thousand Truths",
+      "id": 0,
+      "price": 34975
+    },
+    {
+      "name": "Lute of Auto Tune",
+      "id": 1,
+      "price": 14500
+    },
+    {
+      "name": "Preyseeker Bow",
+      "id": 2,
+      "price": 30000
+    },
+    {
+      "name": "Truesilver Lance",
+      "id": 3,
+      "price": 23500
+    },
+    {
+      "name": "'And My' Axe",
+      "id": 4,
+      "price": 18350
+    },
+    {
+      "name": "Gentleman's Handshank",
+      "id": 5,
+      "price": 9799
+    },
+    {
+      "name": "Wishing Staff",
+      "id": 6,
+      "price": 44500
+    }
+  ]
+}
