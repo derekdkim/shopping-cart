@@ -1,12 +1,20 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+import './index.css';
 
 const Home = () => {
+  const history = useHistory();
+
+  const goToShop = () => {
+    history.push('/shop');
+  }
+
   return(
-    <div>
+    <div className='home-container'>
       <h1>Ye Olde Weapon Shop</h1>
       <p>Welcome adventurers!</p>
       <p>We have the finest weapons to prepare you for your next quest!</p>
-      <button>Shop Now</button>
+      <button className='shop-btn' onClick={goToShop}>Shop Now</button>
     </div>
   );
 }

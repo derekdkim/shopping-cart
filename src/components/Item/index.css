@@ -1,0 +1,28 @@
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-container img {
+  width: 20%;
+}
+
+.item-container p {
+  font-size: 1em;
+}
+
+.item-container button {
+  border: none;
+  border-radius: 5px;
+  width: 40%;
+  height: 15%;
+  font-size: 1em;
+  color: black;
+  background-color: #ffba08;
+}
+
+.item-container button:hover {
+  background-color: #ffd166;
+}

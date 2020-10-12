@@ -1,14 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './index.css';
 
 const NavBar = () => {
   return (
     <nav>
-      <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/Shop'>Shop</Link></li>
-        <li><Link to='/Cart'>Cart</Link></li>
-      </ul>
+      <p>Ye Olde Weapon Shop</p>
+      <div></div>
+      <div className='link-container'>
+        <Link to='/'>Home</Link>
+      </div>
+      <div className='link-container'>
+        <Link to='/Shop'>Shop</Link>
+      </div>
+      <div className='link-container'>
+        <Link to='/Cart'>Cart</Link>
+      </div>
     </nav>
   );
 }

@@ -23,6 +23,7 @@ const CartProvider = ( { children } ) => {
     <CartContext.Provider
       value={{
         cartContent: cartContent,
+        setCartContent: setCartContent,
         addToCart: addToCart
       }}
     >

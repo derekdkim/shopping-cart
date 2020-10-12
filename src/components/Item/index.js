@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './index.css';
 import formatMoney from '../../utils/formatMoney.js';
 import { useCartContext } from '../../context/CartProvider';
 
@@ -12,7 +12,7 @@ const Item = (props) => {
   }
 
   return(
-    <div>
+    <div className='item-container'>
       <img src={require(`../../assets/${data.id}.png`)} alt={data.name} />
       <p>{data.name}</p>
       <p>{formatMoney(data.price)}</p>

@@ -1,0 +1,14 @@
+.shop-container {
+  height: 90%;
+  display: grid;
+  grid-template-rows: 2fr 4fr 1fr;
+}
+
+.shop-container h1 {
+  font-size: 3em;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

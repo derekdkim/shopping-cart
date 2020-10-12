@@ -1,6 +1,8 @@
 import React from 'react';
 import formatMoney from '../../utils/formatMoney.js';
 import { useCartContext } from '../../context/CartProvider';
+import CartItem from '../CartItem';
+import './index.css';
 
 const Cart = () => {
   const cartContext = useCartContext();
@@ -11,26 +13,23 @@ const Cart = () => {
   }
 
   return(
-    <div>
+    <div className='cart-page'>
       {
         cartContext.cartContent.length > 0
-        ? <div>
+        ? <div className='cart-container'>
             <div>
               {
                 cartContext.cartContent.map((item, index) => 
-                  <div key={index}>
-                    <p>{item.name}</p>
-                    <p>{formatMoney(item.price)}</p>
-                    <p>{item.qty}</p>
-                  </div>
+                  <CartItem key={index} data={item} />
                 )
               }
             </div>
-            <div>
-              <p>{formatMoney(calculateTotal())}</p>
+            <div className='total-container'>
+              <p>{`Your Total: ${formatMoney(calculateTotal())}`}</p>
+              <button>Check Out</button>
             </div>
           </div>
-        : <div>Your Cart is Empty</div>
+        : <div className='cart-empty'>Your Cart is Empty</div>
       }
     </div>
   );
