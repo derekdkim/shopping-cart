@@ -9,9 +9,9 @@ const Routes = () => {
 
   return(
       <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route exact path='/shop' component={Shop}/>
-        <Route exact path='/cart' component={Cart}/>
+        <Route exact path='/shopping-cart/' component={Home}/>
+        <Route exact path='/shopping-cart/shop' component={Shop}/>
+        <Route exact path='/shopping-cart/cart' component={Cart}/>
       </Switch>
   );
 }
