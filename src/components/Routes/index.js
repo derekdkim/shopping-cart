@@ -10,8 +10,8 @@ const Routes = () => {
   return(
       <Switch>
         <Route exact path='/shopping-cart/' component={Home}/>
-        <Route exact path='/shopping-cart/shop' component={Shop}/>
-        <Route exact path='/shopping-cart/cart' component={Cart}/>
+        <Route exact path='/shopping-cart/Shop' component={Shop}/>
+        <Route exact path='/shopping-cart/Cart' component={Cart}/>
       </Switch>
   );
 }

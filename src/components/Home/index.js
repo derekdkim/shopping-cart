@@ -6,7 +6,7 @@ const Home = () => {
   const history = useHistory();
 
   const goToShop = () => {
-    history.push('/shopping-cart/shop');
+    history.push('/shopping-cart/Shop');
   }
 
   return(
