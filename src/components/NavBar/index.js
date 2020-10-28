@@ -8,13 +8,13 @@ const NavBar = () => {
       <p>Ye Olde Weapon Shop</p>
       <div></div>
       <div className='link-container'>
-        <Link to='shopping-cart/'>Home</Link>
+        <Link to='/shopping-cart/'>Home</Link>
       </div>
       <div className='link-container'>
-        <Link to='shopping-cart/Shop'>Shop</Link>
+        <Link to='/shopping-cart/Shop'>Shop</Link>
       </div>
       <div className='link-container'>
-        <Link to='shopping-cart/Cart'>Cart</Link>
+        <Link to='/shopping-cart/Cart'>Cart</Link>
       </div>
     </nav>
   );
